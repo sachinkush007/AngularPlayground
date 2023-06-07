@@ -1,1 +1,19 @@
-<p>observable works!</p>
+<button (click)="getPostByO()">Observable</button>
+<div>
+    <li *ngFor="let posts of post">
+      ID::::{{posts.id}}
+      UserId:::{{posts.userId}}<br>
+      Title:::{{posts.title}}<br>
+      Body:::{{posts.body}}
+    </li>
+  </div>
+<hr>
+<button (click)="getPostByP()">Promise</button>
+<div>
+    <li *ngFor="let posts of promisePost">
+      ID::::{{posts.id}}
+      UserId:::{{posts.userId}}<br>
+      Title:::{{posts.title}}<br>
+      Body:::{{posts.body}}
+    </li>
+  </div>
