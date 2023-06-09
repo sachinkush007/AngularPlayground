@@ -1,0 +1,15 @@
+<div><a routerLink="built-pipes" routerLinkActive="active">Built in pipes </a></div>
+<div><a routerLink="async-pipe">Async in pipes </a></div>
+<hr>
+<h2>Reversed String:Custom Pipe</h2>
+<a>{{'Hello World'|reverseString}}</a>
+<hr>
+<input text="text" #text><button (click)="(add(text.value))">Add</button>
+<p>{{country}}</p>
+<a *ngFor="let countrys of country">
+  <li>{{countrys|pureImpure}}</li>
+</a>
+
+<hr>
+
+<router-outlet></router-outlet>

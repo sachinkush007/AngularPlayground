@@ -1,0 +1,19 @@
+<h2>Date Pipe Example:</h2>
+    <p>{{ today | date:'medium' }}</p>
+
+    <h2>Uppercase and Lowercase Pipe Example:</h2>
+    <p>{{ 'hello world' | uppercase }}</p>
+    <p>{{ 'HELLO WORLD' | lowercase }}</p>
+
+    <h2>Currency Pipe Example:</h2>
+    <p>{{ price | currency:'USD':'symbol' }}</p>
+
+    <h2>Decimal Pipe Example:</h2>
+    <p>{{ pi | number:'1.2-2' }}</p>
+
+    <h2>Percent Pipe Example:</h2>
+    <p>{{ percentage | percent }}</p>
+    <h2>Chaining pipe</h2>
+    <p>{{ 'helloworld' | uppercase | slice:0:5 }}</p>
+    <p>{{ price | currency:'USD':'symbol' | percent }}</p>
+

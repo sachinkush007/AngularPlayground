@@ -17,3 +17,11 @@
       Body:::{{posts.body}}
     </li>
   </div>
+  <hr>
+  <div>
+    <button (click)="cancelTimer()">Unsubscribe</button>
+    <li *ngFor="let time of timer">
+     {{time}}
+    </li>
+    
+  </div>
